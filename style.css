@@ -1,0 +1,166 @@
+:root{
+    --color-main: #323028;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+    background-image: linear-gradient(to bottom, #faf8f4, #f5f0e7);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    font-family: "Monospace";
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+::selection{
+    padding: 0.1rem;
+    background-color: #7fd1aec0;
+    color: #212c27;
+}
+
+h1 {
+    display: inline-block;
+    font-family: "Atomic Age";
+    color: var(--color-main);
+    letter-spacing: 0.1rem;
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+    margin: 1rem auto;
+    transition: 0.1s;
+    cursor: default;
+}
+
+#desc {
+    color: var(--color-main);
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: "roboto Mono";
+}
+
+#textarea {
+    resize: vertical;
+    font-family: "ubuntu mono";
+    letter-spacing: 0.05rem;
+    margin-top: 0;
+    color: var(--color-main);
+    background-color: white;
+    width: calc(100% - 48px);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 0px #faf7f1 inset;
+    font-size: 16px;
+    border-radius: 0.7rem 0.7rem 0 0.7rem;
+    border: 2px solid #605D55;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+
+    display: block;
+    background-color:var(--color-main);
+    font-family: "ubuntu mono";
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    margin: 2rem auto;
+    letter-spacing: 0.3rem;
+    width: 25%;
+}
+
+#outputDiv {
+    width: calc(100% - 48px);
+    margin: auto;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    font-family: "roboto mono";
+    font-size: 16px;
+    color: var(--color-main);
+    display: none;
+    border: 2px solid #928F86;
+    border-radius: 0.35rem;
+    background-image: linear-gradient(to right, white, #fffdf9);
+}
+
+#empty{
+    list-style-type: none;
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+
+li{
+    margin: 0.5rem;
+    transition: 0.5s;
+}
+
+a{
+    display: none;
+    text-decoration: none;
+    color: #6e6b5b;
+    font-family: "Comfortaa";
+    font-weight: 200;
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 1.25rem;
+    transition: 0.3s;
+    width: max-content;
+}
+a:hover{
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    cursor: default;
+    transition: 0.3s;
+    font-weight: bold;
+    color: #605D55;
+}
+
+@media only screen and (min-width: 767px) {
+    button{
+        width: 14.3%;
+    }
+
+    #textarea{
+        width: 40%;
+        font-size: 17px;
+    }
+
+    #outputDiv{
+        width: 42%;
+        font-size: 17px;
+    }
+
+    h1{
+        font-size: 46px;
+    }
+}
+
+@media 
+  (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+      #textarea{
+        width: 75%;
+        font-size: 17px;
+  }
+
+  #outputDiv{
+        width: 75%;
+        font-size: 17px;
+  }
+
+  button{
+        width: 25%;
+  }
+
+  }
