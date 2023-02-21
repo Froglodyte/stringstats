@@ -90,6 +90,7 @@ button {
     display: none;
     border: 2px solid #928F86;
     border-radius: 0.35rem;
+    line-height: 1.5;
     background-image: linear-gradient(to right, white, #fffdf9);
 }
 
